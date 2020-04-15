@@ -1,1 +1,18 @@
 <h1>Author Detail</h1>
+
+<p>
+	<strong>Name:</strong>
+	<%= author.firstname %> <%= author.lastname%>
+</p>
+<p>
+	<strong>Genre:</strong>
+	<%= author.genre %>
+</p>
+<h2>
+	<%= author.firstname %>'s Books
+</h2>
+<% author.books.forEach (b => { %>
+	<p>
+		<%= b.title %> (<%= b.pages%> pages long)
+	</p>
+<% })%>

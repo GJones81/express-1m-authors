@@ -1,1 +1,9 @@
 <h1>All Authors</h1>
+
+<% authors.forEach(a => { %>
+	<h2>
+		<%= a.firstname %> <%= a.lastname %>
+	</h2>
+	<a href="/authors/<%=a.id%>">See details</a>
+
+<% }) %>
